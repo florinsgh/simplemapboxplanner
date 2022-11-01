@@ -1,0 +1,118 @@
+/** CSS for the Easy Mapbox Queries */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper{
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 200%;
+}
+
+.routequerywrapper{
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+input#rquery{
+    width: calc(100% - 14px);
+    margin: 0;
+    padding: 5px;
+}
+
+.routequerywrapper p{
+    color: #888;
+    font-size: 90%;
+}
+
+.rqdd{
+    width: 476px;
+    margin-top: -30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+}
+.rqdd.hidden{
+    display: none;
+}
+
+.rqdditem{
+    margin-top: -1px;
+    padding: 8px;
+    border: 1px solid #efefef;
+}
+.rqdditem:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.rqitem{
+    margin-top: -1px;
+    padding: 8px;
+    border: 1px solid #efefef;
+}
+.rqitemremove{
+    padding: 0 5px;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+
+.results{
+    width: 500px;
+    margin: 0 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.rqbutton{
+    width: 80px;
+    margin: 5px auto;
+    padding: 10px;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: #75CFF0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.rqbutton.disabled{
+    background-color: #888;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.mapimage{
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: #ddd;
+    background-image: url('mapplaceholder.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.mapimage img{
+    width: 500px;
+    height: 300px;
+}

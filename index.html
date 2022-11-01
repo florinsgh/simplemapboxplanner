@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">   
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Mapbox Queries</title>
+    <meta name="description" content="A simple and easy Mapbox queries example - autocomplete locations, retrieve trip distance and duration, show map of locations and route.">
+    <meta name="author" content="Florin Costache">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+    <div id="wrapper">
+    
+        <h1>Easy Mapbox Queries</h1>
+        
+        <div class="routequerywrapper">
+            <input class="rquery" id="rquery" placeholder="Location / address / city" onkeyup="rquery();">
+            <p>Type in 3 or more characters for autocomplete</p>
+            <div class="rqdd hidden"></div>
+            <div class="rqresults"></div>
+        </div>
+
+        <div class="results">
+            <div class="rqbutton disabled" onclick="calculateroute();" title="You need at least 2 locations to proceed!">Get details!</div>
+            <div class="rqstats">
+                <div class="distance">Distance: <span class="value">0</span> kilometers</div>
+                <div class="time">Duration: <span class="value">0</span> hours</div>
+            </div>
+            <div class="mapimage"></div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+    <script src="assets/js.js"></script>
+</body>
+</html>
