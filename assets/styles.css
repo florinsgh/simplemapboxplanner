@@ -16,6 +16,13 @@ body{
     flex-wrap: wrap;
 }
 
+.error{
+    margin-top: 10px;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
 h1{
     width: 500px;
     margin: 20px;

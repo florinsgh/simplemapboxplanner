@@ -4,6 +4,8 @@
 const accesstoken = '';
 
 $(document).ready(function(){
+	istokenset();
+
 	$('body').on('click', '.rqitemremove', function(){
 		$(this).parent().remove();
 
@@ -11,6 +13,12 @@ $(document).ready(function(){
 		buttonstatus();
 	});
 });
+
+function istokenset(){
+	if(accesstoken == ''){
+		jQuery('#wrapper').prepend('<div class="error">Please paste your Mapbox.com access token in the assets/js.js file to continue!</div>');
+	}
+}
 
 function rquery(){
 	var query = $('input#rquery').val();
